@@ -1,0 +1,9 @@
+config XTC_MSG_HUB
+	tristate "XTC message hub"
+	help
+	  Provides the XTC message hub sysfs interface at
+	  /sys/kernel/msg_hub.  Messages written by userspace are queued
+	  in a bounded in-kernel FIFO and drained by readers.
+
+	  To compile this driver as a module, choose M here.  The module
+	  will be called xtc_msg_hub.
